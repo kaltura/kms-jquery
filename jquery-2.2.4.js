@@ -9813,3 +9813,11 @@ if ( !noGlobal ) {
 
 return jQuery;
 }));
+
+// Prevent auto-execution of scripts when no explicit dataType was provided (See gh-2432)
+// attack vector and details: https://github.com/jquery/jquery/issues/2432
+jQuery.ajaxPrefilter( function( s ) {
+    if ( s.crossDomain ) {
+	s.contents.script = false;
+    }
+} );
