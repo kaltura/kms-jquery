@@ -1,5 +1,5 @@
 /*!
- * jQuery JavaScript Library v2.2.4 + patches:
+ * jQuery JavaScript Library + patches:
  * https://github.com/jquery/jquery/commit/f60729f3903d17917dc351f3ac87794de379b0cc
  * https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b
  * http://jquery.com/
@@ -11,7 +11,6 @@
  * Released under the MIT license
  * http://jquery.org/license
  *
- * Date: 2016-05-20T17:23Z
  */
 
 (function( global, factory ) {
